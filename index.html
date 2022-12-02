@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homechelin</title>
+    <!---파비콘-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <!---파비콘끝-->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/scss/main.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+  <header id="header">
+      <div class="container">
+          <div class="util_menu">
+              <ul>
+                  <li><a href="/sub/login.html">로그인</a></li>
+                  <li><a href="/sub/join_01.html">회원가입</a></li>
+                  <li><a href="/sub/my_page/my_main.html">마이페이지</a></li>
+                  <li><a href="/sub/help/help_customer.html">고객센터</a></li>
+              </ul>
+              <div class="search_box" id="open_sp">
+                  <input type="text" placeholder="검색어를입력하세요">
+                  <input type="submit" id="search_icon" >
+                  <label for="search_icon"><img src="/img/icon_search.svg" alt=""></label>
+                  <div id="search_pb">
+                      <div class="search_pop">
+                            <button id="close_sp">&times;</button>
+                            <input type="text" placeholder="검색어를입력하세요">
+                            <input type="submit" id="search_2" >
+                            <label for="search_2"><img src="/img/icon_search.svg" alt=""></label>
+                            <div class="kw_wrap"> 
+                                <h4>인기검색어</h4> 
+                                <ul class="search_kw">
+                                    <li><a href="#none">#나루 생 막걸리</a></li>
+                                    <li><a href="#none">#달잔</a></li>
+                                    <li><a href="#none">#허니와인</a></li>
+                                    <li><a href="#none">#고도리 와인</a></li>
+                                    <li><a href="#none">#삼양춘</a></li>
+                                </ul>
+                            </div>  
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <h1><a href="/index.html"><img src="/img/main_logo.svg"></a></h1>
+          <nav>
+              <ul class="depth_01">
+                  <li>
+                      <a href="/sub/company.html">회사소개</a>
+                      <ul class="depth_02">
+                          <li><a href="/sub/company.html">브랜드소개</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="/sub/subscribe_info.html">구독서비스</a>
+                      <ul class="depth_02">
+                          <li><a href="/sub/subscribe_info.html">구독서비스소개</a></li>
+                          <li><a href="/sub/subscribe_pay.html">구독페이지</a></li>
+                          <li><a href="/sub/like_test.html">취향테스트</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="/sub/shop/shop_main.html">쇼핑몰</a>
+                      <ul class="depth_02">
+                          <li><a href="/sub/shop/sool_main.html">전통주</a></li>
+                          <li><a href="/sub/shop/gift_set_01.html">선물세트</a></li>
+                          <li><a href="/sub/shop/sool_jan_01.html">술잔</a></li>
+                      </ul>
+                      <div class=""></div>
+                  </li>
+                  <li>
+                      <a href="/sub/event.html">이벤트</a>
+                      <ul class="depth_02">
+                          <li><a href="/sub/event.html">진행중인이벤트</a></li>
+                          <li><a href="/sub/event_02.html">종료된이벤트</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="/sub/community/notice_01.html">커뮤니티</a>
+                      <ul class="depth_02">
+                          <li><a href="/sub/community/notice_01.html">공지사항</a></li>
+                          <li><a href="/sub/community/review_main.html">구매후기</a></li>
+                          <li><a href="/sub/community/qna_01.html">Q&A</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <div class="back"></div>
+          </nav>
+      </div>
+    </header>
+    <section id="main_banner">
+       <div style="height: 750px; overflow: hidden;"><img src="/img/main_banner.jpg" alt="" style="margin-top: -50px;"></div>
+    </section>
+    <section id="like_test">
+        <div class="container">
+            <div class="video_section"><iframe width="560" height="315" src="https://www.youtube.com/embed/bcBAaHVDJIg?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="test_info">
+                <h2>전통주 취향테스트</h2>
+                <p>간단한 테스트로<br>내입맛에 맞는 전통주 찾기</p>
+                <button><a href="/sub/like_test.html">취향테스트 바로가기</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="sub_menu">
+        <div class="container">
+            <h2>전통주구독메뉴</h2>
+            <p>취향대로 고르는 홈슐랭 정기구독</p>
+            <ul class="sub_menu_l">
+                <li>
+                    <div class="frame_01">
+                        <img src="/img/sub_bg_01.jpg" alt="">
+                        <div class="hover_pop">
+                            <h3>달콤한맛</h3>
+                            <p>과실주로만 구성</p>
+                        </div>
+                    </div>
+                    <button><a href="/sub/subscribe_pay.html">더 알아보기<span> ></span></a></button>
+                </li>
+                <li>
+                    <div class="frame_01">
+                        <img src="/img/sub_bg_02.jpg" alt="">
+                        <div class="hover_pop">
+                            <h3>부드러운맛</h3>
+                            <p>탁주로만 구성</p>
+                        </div>
+                    </div>
+                    <button><a href="/sub/subscribe_pay.html">더 알아보기<span> ></span></a></button>
+                </li>
+                <li>
+                    <div class="frame_01">
+                        <img src="/img/sub_bg_03.jpg" alt="">
+                        <div class="hover_pop">
+                            <h3>깔끔한맛</h3>
+                            <p>증류주, 청/약주로 구성</p>
+                        </div>
+                    </div>
+                    <button><a href="/sub/subscribe_pay.html">더 알아보기<span> ></span></a></button>
+                </li>
+                <li>
+                    <div class="frame_01">
+                        <img src="/img/sub_bg_04.jpg" alt="">
+                        <div class="hover_pop">
+                            <h3>다양한맛</h3>
+                            <p>홈슐랭 추천 구성</p>
+                        </div>
+                    </div>
+                    <button><a href="/sub/subscribe_pay.html">더 알아보기<span> ></span></a></button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-----베스트메뉴----->
+    <section id="best_menu">
+        <div class="container">
+            <h2>BEST 상품</h2>
+            <ul class="best_tab">
+                <li class="best_tab_li">
+                    <input type="radio" name="sul" id="menu_01">
+                    <label for="menu_01">탁주</label>
+                    <ul class="box_l">
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_01.jpg" alt="">
+                            </div>
+                            <h3>[3+1] 별산 막걸리 </h3>
+                            <p class="best_price">27,000원</p>
+                            <p class="best_tag">#새콤달콤<br>#요구르트_같은맛</p>
+                            <a href="/sub/shop/sool_takju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_02.jpg" alt="">
+                            </div>    
+                            <h3>나루 생 막걸리 11.5% </h3>
+                            <p class="best_price">33,000원</p>
+                            <p class="best_tag">#걸쭉한_단맛<br>#바나나와_참외향</p>
+                            <a href="/sub/shop/sool_takju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_03.jpg" alt="">
+                            </div>
+                            <h3>담은 [3병/6병/10병]</h3>
+                            <p class="best_price">29,000원</p>
+                            <p class="best_tag">#입안을_가득_채우는_푸근함<br>#카페라뗴처럼_부드러운 </p>
+                            <a href="/sub/shop/sool_takju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_04.jpg" alt="">
+                            </div>
+                            <h3>[3+1] 문삼이공 잣</h3>
+                            <p class="best_price">17,600원</p>
+                            <p class="best_tag">#잣향_가득<br>#수제누룩</p>
+                            <a href="/sub/shop/sool_takju_01.html"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="best_tab_li">
+                    <input type="radio" name="sul" id="menu_02">
+                    <label for="menu_02">약주/청주</label>
+                    <ul class="box_l">
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_05.jpg" alt="">
+                            </div>
+                            <h3>[5+1] 궁중술 왕주</h3>
+                            <p class="best_price">6,300원</p>
+                            <p class="best_tag">#구기자_국화_솔잎<br>#종묘대제_제사주</p>
+                            <a href="/sub/shop/sool_chungju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_06.jpg" alt="">
+                            </div>
+                            <h3>한청</h3>
+                            <p class="best_price">16,000원</p>
+                            <p class="best_tag">#토종효모로_청주를_만든다면?<br>#새콤달콤한_청주</p>
+                            <a href="/sub/shop/sool_chungju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_07.jpg" alt="">
+                            </div>
+                            <h3>오메기술 15%</h3>
+                            <p class="best_price">15,000원</p>
+                            <p class="best_tag">#제주_향토음식_오메기떡<br>#달콤함과_담백함의_조화</p>
+                            <a href="/sub/shop/sool_chungju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_08.jpg" alt="">
+                            </div>
+                            <h3>감사 블루</h3>
+                            <p class="best_price">13,500원</p>
+                            <p class="best_tag">#드라이한_약주는_드물죠<br>#깔끔한_술맛_좋아한다면</p>
+                            <a href="/sub/shop/sool_chungju_01.html"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="best_tab_li">
+                    <input type="radio" name="sul" id="menu_03" checked>
+                    <label for="menu_03">과실주</label>
+                    <ul class="box_l">
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_09.jpg" alt="">
+                            </div>
+                            <h3>루드베리 X 4병</h3>
+                            <p class="best_price">24,900원</p>
+                            <p class="best_tag">#사이더에_딸기_바질_추가요<br>#다채로운 허브향</p>
+                            <a href="/sub/shop/sool_wine_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_10.jpg" alt="">
+                            </div>
+                            <h3>고도리 복숭아 와인</h3>
+                            <p class="best_price">18,000원</p>
+                            <p class="best_tag">#복숭아로_만든_와인<br>#아이스_와인</p>
+                            <a href="/sub/shop/sool_wine_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_11.jpg" alt="">
+                            </div>
+                            <h3>세인트하우스 오미자 와인</h3>
+                            <p class="best_price">18,500원</p>
+                            <p class="best_tag">#오미자로_만든_와인<br>#달지않고_새콤</p>
+                            <a href="/sub/shop/sool_wine_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_12.jpg" alt="">
+                            </div>
+                            <h3>요새로제 X 2병</h3>
+                            <p class="best_price">32,200원</p>
+                            <p class="best_tag">#애플사이더<br>#사과_오미자_블렌딩</p>
+                            <a href="/sub/shop/sool_wine_01.html"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="best_tab_li">
+                    <input type="radio" name="sul" id="menu_04">
+                    <label for="menu_04">증류주</label>
+                    <ul class="box_l">
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_13.jpg" alt="">
+                            </div>
+                            <h3>금설</h3>
+                            <p class="best_price">28,800원</p>
+                            <p class="best_tag">#금빛_눈보라<br>#조명도_받아가세요</p>
+                            <a href="/sub/shop/sool_soju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_14.jpg" alt="">
+                            </div>
+                            <h3>문경바람 오크 25%</h3>
+                            <p class="best_price">14,800원</p>
+                            <p class="best_tag">#사과로_만든_브랜디<br>#위스키를_좋아한다면</p>
+                            <a href="/sub/shop/sool_soju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_15.jpg" alt="">
+                            </div>
+                            <h3>고소리술 40%</h3>
+                            <p class="best_price">28,000원</p>
+                            <p class="best_tag">#오메기술을_증류하면?<br>#차조로_만든_소주</p>
+                            <a href="/sub/shop/sool_soju_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_16.jpg" alt="">
+                            </div>
+                            <h3>문경바람 백자 25%</h3>
+                            <p class="best_price">14,800원</p>
+                            <p class="best_tag">#사과로_만든_증류주<br>#곡물_소주가_질린다면</p>
+                            <a href="/sub/shop/sool_soju_01.html"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="best_tab_li">
+                    <input type="radio" name="sul" id="menu_05">
+                    <label for="menu_05">선물세트</label>
+                    <ul class="box_l">
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_17.jpg" alt="">
+                            </div>
+                            <h3>미르 3종 미니어처 선물세트</h3>
+                            <p class="best_price">27,000원</p>
+                            <p class="best_tag">#대상_받은_미르40<br>#소주가_미니어처로</p>
+                            <a href="/sub/shop/gift_set_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_18.jpg" alt="">
+                            </div>
+                            <h3>감사/붉은 원숭이 선물세트</h3>
+                            <p class="best_price">18,900원</p>
+                            <p class="best_tag">#부드럽고_달콤해요<br>#스테디셀러_콜라보</p>
+                            <a href="/sub/shop/gift_set_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_19.jpg" alt="">
+                            </div>
+                            <h3>진맥 프리미엄 </h3>
+                            <p class="best_price">80,000원</p>
+                            <p class="best_tag">#고소한_술맛을_선물해보세요<br>#통밀_소주</p>
+                            <a href="/sub/shop/gift_set_01.html"></a>
+                        </li>
+                        <li class="box_s">
+                            <div class="fraim_02">
+                                <img src="/img/best_img/best_20.jpg" alt="">
+                            </div>
+                            <h3>이도 선물세트 D</h3>
+                            <p class="best_price">23,800원</p>
+                            <p class="best_tag">#부드러운_쌀의_단맛<br>#잔과_함께</p>
+                            <a href="/sub/shop/gift_set_01.html"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="pop">
+        <div class="topB">
+            <a href="#header">TOP</a>
+        </div>
+    </section>
+    <div id="workflow">
+        <div class="wf_wrap">
+            <div class="wf_video"><video src="/video/xd_workflow.mp4" autoplay muted loop></video></div>
+            <div class="wf_text">
+                <h4>XD 제작 워크플로우입니다</h4>
+                <p>제작기간: 1일</p>
+            </div>
+            <button class="close_wf">닫기</button>
+        </div>
+    </div>
+
+<?php include_once("./layout/footer.html"); ?>
