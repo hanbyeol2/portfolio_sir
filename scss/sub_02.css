@@ -1,0 +1,570 @@
+@charset "UTF-8";
+/****취향테스트****/
+#sool_test .container .test_wrap {
+  padding: 2rem 0;
+  width: 80%;
+  margin: 1rem auto;
+}
+#sool_test .container .test_wrap > p {
+  font-size: 1.3rem;
+  line-height: 2;
+  font-family: "GmarketSansMedium";
+  color: #666;
+  text-align: center;
+}
+#sool_test .container .test_wrap h2 {
+  font-size: 2rem;
+  line-height: 2;
+  font-family: "GmarketSansMedium";
+  text-align: center;
+}
+#sool_test .container .test_wrap .move_recommend {
+  width: 24%;
+  margin: 0 auto;
+}
+#sool_test .container .test_wrap .move_recommend a {
+  display: block;
+  border: solid 1px #666;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2.5;
+  text-align: center;
+  color: #333;
+  font-family: "GmarketSansMedium";
+  background-color: #fff;
+}
+
+#radio_box {
+  margin: 4rem 0;
+}
+#radio_box > li {
+  margin: 3rem 0;
+}
+#radio_box > li p {
+  text-indent: 1rem;
+  font-size: 1.2rem;
+}
+#radio_box > li .check_list {
+  margin: 2rem auto;
+}
+#radio_box > li .check_list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#radio_box > li .check_list li {
+  float: left;
+  width: 25%;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+}
+#radio_box > li .check_list li input[type=radio] {
+  display: none;
+}
+#radio_box > li .check_list li input[type=radio]:checked + label {
+  border: solid 3px #10324a;
+  box-sizing: border-box;
+}
+#radio_box > li .check_list li label {
+  display: inline-block;
+  text-indent: 0.5rem;
+  width: 100%;
+  line-height: 2;
+}
+#radio_box > li .check_list li label img {
+  display: block;
+  width: 100%;
+}
+
+/****추천****/
+#recommend .container .mail_fraim {
+  width: 6%;
+  margin: 3rem auto 1rem;
+}
+#recommend .container .mail_fraim img {
+  display: block;
+  width: 100%;
+}
+#recommend .container h2 {
+  font-size: 2rem;
+  line-height: 2;
+  font-family: "GmarketSansMedium";
+  text-align: center;
+}
+#recommend .container .recom_wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+#recommend .container .recom_wrap li {
+  border: solid 1px #333;
+  margin: 2rem 0;
+}
+#recommend .container .recom_wrap li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#recommend .container .recom_wrap li .recom_fraim {
+  float: left;
+  width: calc(35% - 2rem);
+  margin: 1rem;
+}
+#recommend .container .recom_wrap li .recom_fraim img {
+  display: block;
+  width: 100%;
+}
+#recommend .container .recom_wrap li .recom_box {
+  float: right;
+  width: calc(65% - 2rem);
+  margin: 4rem 1rem;
+}
+#recommend .container .recom_wrap li .recom_box p {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #333;
+  font-weight: bold;
+  font-family: "GmarketSansMedium";
+}
+#recommend .container .recom_wrap li .recom_box p span {
+  color: #888;
+  font-weight: normal;
+}
+#recommend .container .recom_wrap li .recom_box h3 {
+  font-size: 1.8rem;
+  line-height: 3;
+  color: #000;
+  font-weight: bold;
+  font-family: "GmarketSansMedium";
+}
+#recommend .container .move_back {
+  width: 50%;
+  margin: 3rem auto;
+}
+#recommend .container .move_back::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#recommend .container .move_back li {
+  float: left;
+  width: calc(50% - 2rem);
+  margin: 1rem;
+}
+#recommend .container .move_back li a {
+  display: block;
+  border: solid 1px #666;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2.5;
+  text-align: center;
+  color: #333;
+  font-family: "GmarketSansMedium";
+  background-color: #fff;
+}
+
+/*****이벤트*****/
+#event .container .event_list {
+  margin: 3rem 0;
+}
+#event .container .event_list li {
+  margin: 2rem 0;
+}
+#event .container .event_list li a {
+  display: block;
+}
+#event .container .event_list li a img {
+  display: block;
+  width: 100%;
+}
+#event .container .event_list .event_02 a {
+  background-color: #000;
+}
+#event .container .event_list .event_02 a img {
+  opacity: 0.5;
+}
+
+/*****리뷰*******/
+#review_p {
+  margin: 3rem 0;
+}
+#review_p .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#review_p .container h2 {
+  display: inline-block;
+  font-family: "GmarketSansMedium";
+  font-size: 2rem;
+  color: #000;
+  line-height: 2;
+}
+#review_p .container p {
+  display: inline-block;
+  font-family: "GmarketSansMedium";
+  font-size: 1.2rem;
+  color: #666;
+}
+#review_p .container .move_review {
+  float: right;
+  width: 10%;
+}
+#review_p .container .move_review a {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 3;
+  text-align: center;
+}
+#review_p .container .write_review {
+  float: right;
+  width: 10%;
+}
+#review_p .container .write_review a {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 2.5;
+  border: solid 1px #ccc;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#review_p .container .ptrv::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#review_p .container .ptrv li {
+  float: left;
+  width: calc(25% - 2rem);
+  margin: 1rem;
+}
+#review_p .container .ptrv li a {
+  display: block;
+}
+#review_p .container .ptrv li a img {
+  display: block;
+  width: 100%;
+}
+
+#review_t {
+  margin: 3rem 0;
+}
+#review_t .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#review_t .container h2 {
+  display: inline-block;
+  font-family: "GmarketSansMedium";
+  font-size: 2rem;
+  color: #000;
+  line-height: 2;
+}
+#review_t .container p {
+  display: inline-block;
+  font-family: "GmarketSansMedium";
+  font-size: 1.2rem;
+  color: #666;
+}
+#review_t .container .move_review {
+  float: right;
+}
+#review_t .container .move_review a {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 3;
+}
+#review_t .container .write_review {
+  float: right;
+  width: 10%;
+}
+#review_t .container .write_review a {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 2.5;
+  border: solid 1px #ccc;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#review_t .container table {
+  margin: 1rem 0;
+  width: 100%;
+  line-height: 2.5;
+}
+#review_t .container table thead tr {
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+#review_t .container table thead tr th {
+  width: 10%;
+}
+#review_t .container table thead tr th:nth-child(3) {
+  width: 60%;
+}
+#review_t .container table tbody tr {
+  border-bottom: solid 1px #ccc;
+}
+#review_t .container table tbody tr td {
+  text-align: center;
+  color: #333;
+}
+#review_t .container table tbody tr td:nth-child(3) {
+  text-align: left;
+  text-indent: 0.5rem;
+}
+#review_t .container table tbody tr td a {
+  display: block;
+  color: #000;
+}
+
+#sub_info {
+  text-align: center;
+  margin: 5rem 0 0 0;
+  letter-spacing: -1px;
+}
+#sub_info .container .snp {
+  font-size: 1rem;
+  line-height: 3;
+  font-weight: bold;
+  color: #52758f;
+}
+#sub_info .container p {
+  font-size: 2.5rem;
+  line-height: 3;
+}
+#sub_info .container p span {
+  font-weight: bold;
+}
+#sub_info .container h3 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+#sub_info .container h3 span {
+  font-weight: normal;
+}
+#sub_info .container .sub_info_wrap li {
+  margin: 5rem 0;
+}
+#sub_info .container .sub_info_wrap li h4 {
+  font-size: 2rem;
+  line-height: 2;
+}
+#sub_info .container .sub_info_wrap li p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+#sub_info .container .sub_info_wrap li .move_sub {
+  width: 50%;
+  margin: 2rem auto;
+}
+#sub_info .container .sub_info_wrap li .move_sub:hover a {
+  background-color: #10324a;
+  color: #fff;
+}
+#sub_info .container .sub_info_wrap li .move_sub a {
+  display: block;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  border: solid 1px #333;
+  color: #333;
+  transition: 0.4s;
+}
+
+#brand_info {
+  text-align: center;
+  margin: 5rem 0 0 0;
+  letter-spacing: -1px;
+}
+#brand_info .container .snp {
+  font-size: 1rem;
+  line-height: 3;
+  font-weight: bold;
+  color: #52758f;
+}
+#brand_info .container h3 {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+#brand_info .container h3 span {
+  font-weight: normal;
+}
+#brand_info .container > p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+#brand_info .container > p span {
+  font-weight: bold;
+}
+#brand_info .container .brand_img {
+  margin: 3rem auto;
+}
+#brand_info .container .brand_img ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#brand_info .container .brand_img ul li {
+  width: 33.33%;
+  float: left;
+}
+#brand_info .container .brand_img ul li .brand_fraim {
+  width: 18rem;
+  height: 18rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#brand_info .container .brand_img ul li .brand_fraim img {
+  display: block;
+  width: 100%;
+}
+#brand_info .container .brand_img ul li p {
+  font-size: 1rem;
+  color: #10324a;
+  font-family: "GmarketSansMedium";
+  line-height: 3;
+}
+
+#menu_sub {
+  margin: 3rem auto;
+}
+#menu_sub .container .sub_wrap > li > p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #333;
+}
+#menu_sub .container .sub_wrap > li .menu_ul {
+  margin: 1rem 0;
+}
+#menu_sub .container .sub_wrap > li .menu_ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li {
+  float: left;
+  width: calc(25% - 0.75rem);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 8px #ccc;
+  position: relative;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li:nth-child(4n) {
+  margin-right: 0;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li:hover a {
+  /**background-color: rgba(0, 0, 0, 0.1);**/
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li .menu_fraim {
+  height: 23rem;
+  overflow: hidden;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li .menu_fraim img {
+  display: block;
+  width: 130%;
+  margin: 0 0 0 -13%;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li h3 {
+  line-height: 2;
+  font-family: "GmarketSansMedium";
+  font-size: 1rem;
+  color: #333;
+  margin-left: 0.5rem;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li .menu_price {
+  color: #999;
+  margin-bottom: 1rem;
+  text-indent: 0.5rem;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li .menu_price span {
+  text-decoration: line-through;
+  color: #ccc;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li .menu_tag {
+  margin-left: 0.5rem;
+  color: #fd81b3;
+  font-family: "GmarketSansMedium";
+  line-height: 2;
+}
+#menu_sub .container .sub_wrap > li .menu_ul .menu_li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+#personal {
+  margin: 2rem 0;
+}
+#personal .container .personal_wrap {
+  height: 500px;
+  overflow: scroll;
+  padding: 20px 5px;
+  border: solid 1px #ccc;
+}
+#personal .container .personal_wrap h3 {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+#personal .container .personal_wrap p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+#market_p {
+  margin: 2rem 0;
+}
+#market_p .container .market_wrap {
+  height: 500px;
+  overflow: scroll;
+  padding: 20px 5px;
+  border: solid 1px #ccc;
+}
+#market_p .container .market_wrap h3 {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+#market_p .container .market_wrap p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+#market_p .container .market_wrap p:nth-child(odd) {
+  color: #666;
+}
+
+#guide {
+  margin: 2rem 0;
+}
+#guide .container .guide_wrap {
+  height: 500px;
+  overflow: scroll;
+  padding: 20px 5px;
+  border: solid 1px #ccc;
+}
+#guide .container .guide_wrap h3 {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+#guide .container .guide_wrap p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+#guide .container .guide_wrap p:nth-child(odd) {
+  color: #666;
+}/*# sourceMappingURL=sub_02.css.map */

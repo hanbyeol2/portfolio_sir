@@ -1,0 +1,618 @@
+/****취향테스트****/
+#sool_test{
+    .container{
+        .test_wrap{
+            padding: 2rem 0;
+            width: 80%;
+            margin: 1rem auto;
+            >p{
+                font-size: 1.3rem;
+                line-height: 2;
+                font-family: 'GmarketSansMedium';
+                color: #666;
+                text-align: center;
+            }
+            h2{
+                font-size: 2rem;
+                line-height: 2;
+                font-family: 'GmarketSansMedium';
+                text-align: center;
+            }
+            .move_recommend{
+                width: 24%;
+                margin: 0 auto;
+                a{
+                    display: block;
+                    border: solid 1px #666;
+                    border-radius: 0.5rem;
+                    font-size: 1rem;
+                    line-height: 2.5;
+                    text-align: center;
+                    color: #333;
+                    font-family: 'GmarketSansMedium';
+                    background-color: #fff;
+
+                }
+            }
+        }
+    }
+}
+
+#radio_box{
+    margin: 4rem 0;
+    >li{
+        margin: 3rem 0;
+        p{
+            text-indent: 1rem;
+            font-size: 1.2rem;
+        }
+        .check_list{
+            margin: 2rem auto;
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            li{
+                float: left;
+                width: 25%;
+                font-size: 1rem;
+                line-height: 2;
+                text-align: center;
+                input[type="radio"]{
+                    display: none;
+                    &:checked + label{
+                        border: solid 3px #10324a;
+                        box-sizing: border-box;
+                    }
+                }
+                label{
+                    display: inline-block;
+                    text-indent: 0.5rem;
+                    width: 100%;
+                    line-height: 2;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/****추천****/
+#recommend{
+    .container{
+        .mail_fraim{
+            width: 6%;
+            margin: 3rem auto 1rem;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        h2{
+            font-size: 2rem;
+            line-height: 2;
+            font-family: 'GmarketSansMedium';
+            text-align: center;
+        }
+        .recom_wrap{
+            width: 80%;
+            margin: 0 auto;
+            li{
+                border: solid 1px #333;
+                margin: 2rem 0;
+                &::after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .recom_fraim{
+                    float: left;
+                    width: calc(35% - 2rem);
+                    margin: 1rem;
+
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .recom_box{
+                    float: right;
+                    width: calc(65% - 2rem);
+                    margin: 4rem 1rem;
+                    p{
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        color: #333;
+                        font-weight: bold;
+                        font-family: 'GmarketSansMedium';
+                        span{
+                            color: #888;
+                            font-weight: normal;
+                        }
+                    }
+                    h3{
+                        font-size: 1.8rem;
+                        line-height: 3;
+                        color: #000;
+                        font-weight: bold;
+                        font-family: 'GmarketSansMedium';
+                    }
+                }
+            }
+        }
+        .move_back{
+            width: 50%;
+            margin: 3rem auto;
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            li{
+                float: left;
+                width: calc(50% - 2rem);
+                margin: 1rem;
+                a{
+                    display: block;
+                    border: solid 1px #666;
+                    border-radius: 0.5rem;
+                    font-size: 1rem;
+                    line-height: 2.5;
+                    text-align: center;
+                    color: #333;
+                    font-family: 'GmarketSansMedium';
+                    background-color: #fff; 
+                }
+            }
+        }
+    }
+}
+
+/*****이벤트*****/
+#event{
+    .container{
+        .event_list{
+            margin: 3rem 0;
+            li{
+                margin: 2rem 0;
+                a{
+                    display: block;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+            .event_02{
+                a{
+                    background-color: #000;
+                    img{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*****리뷰*******/
+#review_p{
+    margin: 3rem 0;
+    .container{
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        h2{
+            display: inline-block;
+            font-family: 'GmarketSansMedium';
+            font-size: 2rem;
+            color: #000;
+            line-height: 2;
+        }
+        p{
+            display: inline-block;
+            font-family: 'GmarketSansMedium';
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .move_review{
+            float: right;
+            width: 10%;
+            a{
+                display: block;
+                font-size: 1.2rem;
+                color: #666;
+                line-height: 3;
+                text-align: center;
+            }
+        }
+        .write_review{
+            float: right;
+            width: 10%;
+            a{
+                display: block;
+                font-size: 1.2rem;
+                color: #666;
+                line-height: 2.5;
+                border: solid 1px #ccc;
+                border-radius: 0.5rem;
+                text-align: center;
+            }
+        }
+        .ptrv{
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            li{
+                float: left;
+                width: calc(25% - 2rem);
+                margin: 1rem;
+                a{
+                    display: block;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+#review_t{
+    margin: 3rem 0;
+    .container{
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        h2{
+            display: inline-block;
+            font-family: 'GmarketSansMedium';
+            font-size: 2rem;
+            color: #000;
+            line-height: 2;
+        }
+        p{
+            display: inline-block;
+            font-family: 'GmarketSansMedium';
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .move_review{
+            float: right;
+            a{
+                display: block;
+                font-size: 1.2rem;
+                color: #666;
+                line-height: 3;
+            }
+        }
+        .write_review{
+            float: right;
+            width: 10%;
+            a{
+                display: block;
+                font-size: 1.2rem;
+                color: #666;
+                line-height: 2.5;
+                border: solid 1px #ccc;
+                border-radius: 0.5rem;
+                text-align: center;
+            }
+        }
+        table{
+            margin: 1rem 0;
+            width: 100%;
+            line-height: 2.5;
+
+            thead{
+                tr{
+                    border-top: solid 1px #ccc;
+                    border-bottom: solid 1px #ccc;
+                    th{
+                        width: 10%;
+                        &:nth-child(3){
+                            width: 60%;
+                        }
+                        
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    border-bottom: solid 1px #ccc;
+                    td{
+                        text-align: center;
+                        color: #333;
+                        &:nth-child(3){
+                            text-align: left;
+                            text-indent: 0.5rem;
+                        }
+                        a{
+                            display: block;
+                            color: #000;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#sub_info{
+    text-align: center;
+    margin: 5rem 0 0 0;
+    letter-spacing: -1px;
+    .container{
+        .snp{
+            font-size: 1rem;
+            line-height: 3;
+            font-weight: bold;
+            color: #52758f;
+
+        }
+        p{
+            font-size: 2.5rem;
+            line-height: 3;
+            span{
+                font-weight: bold;
+            }
+        }
+        h3{
+            font-size: 3rem;
+            line-height: 1.5;
+            span{
+                font-weight: normal;
+            }
+        }
+        .sub_info_wrap{
+            li{
+                margin: 5rem 0;
+                h4{
+                    font-size: 2rem;
+                    line-height: 2;
+                }
+                p{
+                    font-size: 1.5rem;
+                    line-height: 2;
+                }
+                .move_sub{
+                    width: 50%;
+                    margin: 2rem auto;
+                    &:hover a{
+                        background-color: #10324a;
+                        color: #fff;
+                    }
+                    a{
+                        display: block;
+                        border-radius: 0.5rem;
+                        font-size: 1.5rem;
+                        line-height: 2.5;
+                        border: solid 1px #333;
+                        color: #333;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#brand_info{
+    text-align: center;
+    margin: 5rem 0 0 0;
+    letter-spacing: -1px;
+    .container{
+        .snp{
+            font-size: 1rem;
+            line-height: 3;
+            font-weight: bold;
+            color: #52758f;
+        }
+        h3{
+            font-size: 3rem;
+            line-height: 1.5;
+            margin: 1rem 0;
+            span{
+                font-weight: normal;
+            }
+        }
+        >p{
+            font-size: 1.5rem;
+            line-height: 1.5;
+            span{
+                font-weight: bold;
+            }
+        }
+        .brand_img{
+            margin: 3rem auto;
+            ul{
+                &:after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                li{
+                    width: 33.33%;
+                    float: left;
+                    .brand_fraim{
+                        width: 18rem;
+                        height: 18rem;
+                        background-color: #ccc;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        overflow: hidden;
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    p{
+                        font-size: 1rem;
+                        color: #10324a;
+                        font-family: 'GmarketSansMedium';
+                        line-height: 3;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+#menu_sub{
+    margin: 3rem auto;
+    .container{
+        .sub_wrap{
+            >li{
+                >p{
+                    font-size: 1.5rem;
+                    line-height: 2;
+                    color: #333;
+                }
+                .menu_ul{
+                    margin: 1rem 0;
+                    &:after{
+                        content: "";
+                        display: block;
+                        clear:both;
+                    }
+                    .menu_li{
+                        float: left;
+                        width: calc(25% - 0.75rem);
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                        box-shadow: 3px 3px 8px #ccc;
+                        position: relative;
+                        &:nth-child(4n){
+                            margin-right: 0;
+                        }
+                        &:hover a{
+                            /**background-color: rgba(0, 0, 0, 0.1);**/
+                        }
+                        .menu_fraim{
+                            height: 23rem;
+                            overflow: hidden;
+                            img{
+                                display: block;
+                                width: 130%;
+                                margin: 0 0 0 -13%;
+                            }
+                        }
+                        h3{
+                            line-height: 2;
+                            font-family: 'GmarketSansMedium';
+                            font-size: 1rem;
+                            color: #333;
+                            margin-left: 0.5rem;
+                        }
+                        .menu_price{
+                            color: #999;
+                            margin-bottom: 1rem;
+                            text-indent: 0.5rem;
+                            span{
+                                text-decoration: line-through;
+                                color: #ccc;
+                            }
+                        }
+                        .menu_tag{
+                            margin-left: 0.5rem;
+                            color: #fd81b3;
+                            font-family: 'GmarketSansMedium';
+                            line-height: 2;
+                        }
+                        a{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#personal{
+    margin: 2rem 0;
+    .container{
+        .personal_wrap{
+            height: 500px;
+            overflow: scroll;
+            padding: 20px 5px;
+            border: solid 1px #ccc;
+            h3{
+                font-size: 1.5rem;
+                line-height: 2;
+            }
+            p{
+                margin: 1rem 0;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #333;
+            }
+        }
+    }
+}
+#market_p{
+    margin: 2rem 0;
+    .container{
+        .market_wrap{
+            height: 500px;
+            overflow: scroll;
+            padding: 20px 5px;
+            border: solid 1px #ccc;
+            h3{
+                font-size: 1.5rem;
+                line-height: 2;
+            }
+            p{
+                margin: 1rem 0;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #333;
+                &:nth-child(odd){
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+
+#guide{
+    margin: 2rem 0;
+    .container{
+        .guide_wrap{
+            height: 500px;
+            overflow: scroll;
+            padding: 20px 5px;
+            border: solid 1px #ccc;
+            h3{
+                font-size: 1.5rem;
+                line-height: 2;
+            }
+            p{
+                margin: 1rem 0;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #333;
+                &:nth-child(odd){
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+

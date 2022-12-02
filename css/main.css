@@ -1,0 +1,465 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 16px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/********헤더*************/
+#header{
+    background-color: #10324a;
+    padding: 5px 0 0 0;
+    position: relative
+}
+
+/******유틸********/
+
+#header .util_menu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#header .util_menu > ul{
+    float: right;
+    width: 40%;
+}
+#header .util_menu > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#header .util_menu > ul > li{
+    float: left;
+    width: 23%;
+}
+#header .util_menu > ul > li:last-child{
+    width: 8%;
+}
+#header .util_menu > ul > li > a{
+    display: block;
+    font-family: 'GmarketSansMedium';
+    color: #e85d95;
+    font-size: 0.8rem;
+    line-height: 2;
+    text-align: center;
+}
+#search_icon img{
+    display: block;
+    width: 50%;
+    margin: 5px 0 0 0;
+}
+#header .util_menu ul li:hover a{
+    color: #e4d7db;
+}
+
+
+/**********로고************/
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#header .container h1{
+    float: left;
+    background-color: #10324a;
+    width: 10%;
+    margin: 10px auto;
+}
+
+#header .container h1 a img{
+    display: block;
+    width: 100%;
+}
+
+/*********대메뉴***********/
+#main_depth{
+    width: 70%;
+    float: right;
+}
+
+#header .depth_01::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#header .depth_01 > li{
+    float: left;
+    width: 20%;
+    position: relative;
+}
+#header .depth_01 > li:hover .depth_02{
+    height: 150px;
+}
+#header .depth_01 > li:hover > a{
+    color: #e85d95;
+}
+#header .depth_01 > li > a{
+    display: block;
+    font-family: 'GmarketSansMedium';
+    font-size: 1.2rem;
+    line-height: 4;
+    text-align: center;
+    color: #e4d7db;
+}
+
+/********소메뉴*********/
+#header .depth_01 .depth_02{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 9;
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+#header .depth_01 .depth_02 li a{
+    display: block;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 3;
+    text-align: center;
+    font-family: 'GmarketSansMedium';
+
+}
+#header .depth_01 .depth_02 li a:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-top: solid 1px #e85d95;
+    border-right: solid 1px #e85d95;
+    transform: rotate(45deg);
+    margin: 0 0 0 5px;
+    display: none;
+}
+#header .depth_01 .depth_02 li:hover a:after{
+    display: inline-block;
+}
+#header .depth_01 .depth_02 li:hover a{
+    color: #e85d95;
+}
+#header .back{
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    background-color: #10324a;
+    z-index: 1;
+    transition: 0.6s;
+}
+#header .depth_01:hover + .back{
+    height: 150px;
+}
+
+/*****메인배너*********/
+
+#main_banner{
+    line-height: 10rem;
+}
+
+/******** 회원가입********/
+#join{
+    width: 600px;
+    margin: 100px auto;
+}
+#join fieldset{
+    border: none;
+}
+#join legend{
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'GmarketSansMedium';
+}
+#join .line{
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 30px;
+}
+#join p{
+    margin: 15px 0;
+}
+#join p:nth-child(2){
+    margin-top: 50px;
+}
+#join p:nth-child(13){
+    margin-top: 50px;
+}
+#join .form_title{
+    display: inline-block;
+    width: 20%;
+    text-indent: 25px;
+    font-size: 12px;
+}
+#join span{
+    font-family: 'GmarketSansMedium';
+}
+#join input[type="text"],
+#join input[type="password"]{
+    display: inline-block;
+    width: 70%;
+    line-height: 30px;
+    text-indent: 5px;
+}
+#join label{
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 20px;
+    line-height: 30px;
+    font-family: 'GmarketSansMedium';
+}
+#join input[type="submit"]{
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    border: 0;
+    line-height: 40px;
+    padding: 0 25px;
+    margin: 30px auto;
+}
+#join p:last-child{
+    text-align: center;
+}
+#join .agree input{
+    margin-left: 120px;
+}
+#join .agree label{
+    background-color: #fff;
+    color: #666;
+
+}
+#join .info{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/****로그인***/
+#login{
+    width: 600px;
+    height: 550px;
+    margin: 100px auto;
+}
+#login fieldset{
+    border: none;
+}
+#login legend{
+    display: block;
+    font-size: 1.5rem;
+    line-height: 3;
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+}
+/******탭******/
+#login_tab{
+    position: relative;
+}
+#login_tab:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#login_tab > li{
+    width: 50%;
+    float: left;
+    
+}
+
+#login_tab li .ab_box{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+#login_tab li .ab_box:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#login_tab li input[type="radio"]{
+    display: none;
+}
+#login_tab li input[type="radio"]:checked ~ .ab_box{
+    display: block;
+}
+#login_tab li input[type="radio"]:checked + label{
+    border: 0;
+    background-color: #10324a;
+    color: #e4d7db;
+}
+#login_tab > li > label{
+    display: block;
+    font-family: 'GmarketSansMedium';
+    border: solid 1px #333;
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+#login_tab .ab_box{
+    display: none;
+}
+#login_tab .login_box{
+    float: left;
+    width: 70%;
+}
+#login_tab .login_box li{}
+#login_tab .login_box li input{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 3;
+    width: 100%;
+    text-indent: 10px;
+    margin: 10px 5px;
+}
+#login_tab .ab_01 > input[type="submit"]{
+    font-family: 'GmarketSansMedium';
+    float: right;
+    display: block;
+    border: 0;
+    line-height: 5.5;
+    font-size: 1.5rem;
+    width: 25%;
+    margin: 10px 10px;
+    border-radius: 0.5rem;
+    background-color: #10324a;
+    color: #fff;
+    transition: 0.4s;
+}
+#login_tab .ab_01 > input[type="submit"]:hover{
+    color: #e85d95;
+}
+#login_tab .ab_box > input[type="checkbox"]{
+    display: block;
+    margin: 0.5rem;
+    float: left;
+}
+#login_tab .ab_box > label{
+    font-family: 'GmarketSansMedium';
+    display: block;
+    font-size: 1rem;
+    float: left;
+    line-height: 2;
+}
+#login_tab .search_idpw{
+    float: right;
+    width: 40%;
+    line-height: 2;
+}
+#login_tab .search_idpw:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#login_tab .search_idpw li{
+    float: left;
+    width: 50%;
+}
+#login_tab .search_idpw li a{
+    font-family: 'GmarketSansMedium';
+    display: block;
+    font-size: 1rem;
+    text-align: right;
+    color: #333;
+}
+#login_tab .move_join{
+}
+#login_tab .move_join a{
+    font-family: 'GmarketSansMedium';
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    border: solid 1px #333;
+    float: left;
+    color: #333;
+    border-radius: 0.5rem;
+    margin: 10px 0;
+    text-align: center;
+    transition: 0.4s;
+}
+#login_tab .move_join:hover a{
+    background-color: #10324a;
+    color: #e85d95;
+}
+#login_tab .easy_login{
+    float: left;
+    width: 100%;
+}
+#login_tab .easy_login li{}
+#login_tab .easy_login li a{
+    display: block;
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5;
+    border: solid 1px #333;
+    margin: 10px 0;
+    color: #333;
+}
+#login_tab .easy_login li:hover a{
+
+}
+
+#login_tab .ab_box_{}
+#login_tab .ab_box .login_box_2{}
+#login_tab .login_box_2 li{}
+#login_tab .login_box_2 li input{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 3;
+    width: 100%;
+    text-indent: 10px;
+    margin: 10px 5px;
+}
+#login_tab .ab_02 > input{
+    font-family: 'GmarketSansMedium';
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    background-color: #10324a;
+    float: left;
+    color: #Fff;
+    border-radius: 0.5rem;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+#login_tab .ab_02 > input:hover{
+    color: #e85d95;
+}
+
