@@ -1,0 +1,67 @@
+<?php include_once("../../layout/header.html"); ?>
+    <section id="help_top">
+        <div class="container">
+            <h2>고객센터<span>평일09:00-18:00</span></h2>
+            <p>도움이 필요하신가요?</p>
+            <ul class="contact_way">
+                <li><a href="tel:+010-8846-8535">상담원 연결</a></li>
+                <li><a href="mailto:dlgksquf8535@naver.com?subject=naver">이메일 상담</a></li>
+                <li><a href="#none">1:1 문의</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="help_mid">
+        <div class="container">
+            <ul id="move_menu_01">
+                <li><a href="/sub/help/help_customer.html">FAQ</a></li>
+                <li class="state_check"><a href="/sub/help/question.html">1:1문의</a></li>
+                <li><a href="/sub/community/notice_01.html">공지사항</a></li>
+            </ul>
+            <form id="question_01">
+                <fieldset>
+                    <legend>1:1 문의</legend>
+                    <p>* 항목은 필수 입력항목입니다.</p>
+                    <ul>
+                        <li>
+                            <span>성함*</span>
+                            <input type="text" required placeholder="성함을 입력해 주세요." autofocus>
+                        </li>
+                        <li>
+                            <span>연락처*</span>
+                            <input type="text" required placeholder="연락처를 입력해 주세요.">
+                        </li>
+                    </ul>
+                    <p>
+                        <span>문의 분야*</span>
+                        <select name="" id="" required>
+                            <option value="product">상품문의</option>
+                            <option value="delivery">배송문의</option>
+                            <option value="change">환불/교환문의</option>
+                            <option value="ect">기타문의</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>제목*</span>
+                        <input type="text" name="" id="" required placeholder="제목을 입력해 주세요.">
+                    </p>
+                    <p> 
+                        <span class="v_a">내용*</span>
+                        <textarea class="v_a" name="" id="" cols="30" rows="10" required placeholder="내용을 입력해 주세요." ></textarea>
+                    </p>
+                    <p>
+                        <span>첨부파일</span>
+                        <input type="text" placeholder="총 5MB 미만의 문서와 이미지 파일만 첨부 가능합니다." readonly>
+                        <input type="file" id="file_01">
+                        <label for="file_01">파일첨부</label>
+                    </p>
+                    <p>
+                        <input type="reset" value="다시 작성하기" id="reset_01">
+                        <label for="reset_01">다시 작성하기</label>
+                        <input type="submit" value="제출하기" id="submit_01">
+                        <label for="submit_01">제출하기</label>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+<?php include_once("../../layout/footer.html"); ?>

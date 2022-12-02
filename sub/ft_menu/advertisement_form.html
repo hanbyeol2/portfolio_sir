@@ -1,0 +1,70 @@
+<?php include_once("../../layout/header.html"); ?>
+    <section id="brand_top">
+        <div class="container">
+            <div class="nav_guide">
+                <a href="http://yanbyeol.dothome.co.kr">HOME</a>
+                <span class="greater"></span>
+                <span>광고/제휴문의</span>
+            </div>
+            <h2>
+                광고 ・ 제휴문의
+            </h2>
+        </div>
+    </section>
+    <section id="ad_form">
+        <div class="container">
+            <form id="ad">
+                <fieldset>
+                    <legend>광고/제휴문의</legend>
+                    <p>* 항목은 필수 입력항목입니다.</p>
+                    <ul>
+                        <li>
+                            <span>업체명*</span>
+                            <input type="text" required placeholder="업체명을 입력해 주세요." autofocus>
+                        </li>
+                        <li>
+                            <span>담당자명*</span>
+                            <input type="text" required placeholder="성함을 입력해 주세요.">
+                        </li>
+                        <li>
+                            <span>연락처*</span>
+                            <input type="text" required placeholder="연락처를 입력해 주세요.">
+                        </li>
+                        <li>
+                            <span>이메일*</span>
+                            <input type="email" required placeholder="이메일 주소를 입력해 주세요.">
+                        </li>
+                    </ul>
+                    <p>
+                        <span>문의 분야*</span>
+                        <select name="" id="" required>
+                            <option value="advertise">광고문의</option>
+                            <option value="alliance">제휴문의</option>
+                            <option value="ect">기타문의</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>제목*</span>
+                        <input type="text" name="" id="" required placeholder="제목을 입력해 주세요.">
+                    </p>
+                    <p> 
+                        <span class="v_a">내용*</span>
+                        <textarea class="v_a" name="" id="" cols="30" rows="10" required placeholder="내용을 입력해 주세요." ></textarea>
+                    </p>
+                    <p>
+                        <span>첨부파일</span>
+                        <input type="text" placeholder="총 5MB 미만의 문서와 이미지 파일만 첨부 가능합니다." readonly>
+                        <input type="file" id="file_01">
+                        <label for="file_01">파일첨부</label>
+                    </p>
+                    <p>
+                        <input type="reset" value="다시 작성하기" id="reset_01">
+                        <label for="reset_01">다시 작성하기</label>
+                        <input type="submit" value="제출하기" id="submit_01">
+                        <label for="submit_01">제출하기</label>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+<?php include_once("../../layout/footer.html"); ?>

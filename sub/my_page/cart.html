@@ -1,0 +1,74 @@
+<?php include_once("../../layout/header.html"); ?>
+    <section id="my_top">
+        <div class="container">
+            <h2>CART</h2>
+        </div>
+    </section>
+    <section id="my_mid">
+        <div class="container">
+            <div id="side_nav">
+                <ul class="myDepth_01">
+                    <li>
+                        <a href="#none">나의 쇼핑정보</a>
+                        <ul class="myDepth_02">
+                            <li><a href="/sub/my_page/order_list.html">주문/배송 조회</a></li>
+                            <li><a href="/sub/my_page/like_list.html">찜한상품</a></li>
+                            <li class="state_ck"><a href="#none">장바구니</a></li>
+                            <li><a href="#none">취소/교환/반품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">나의 혜택정보</a>
+                        <ul class="myDepth_02">
+                            <li><a href="#none">포인트</a></li>
+                            <li><a href="#none">쿠폰</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">나의 정보수정</a>
+                        <ul class="myDepth_02">
+                            <li><a href="#none">회원정보 수정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="my_content">
+                <ul class="my_content_wrap">
+                    <li>
+                        <h4>장바구니</a></h4>
+                        <table class="order_info">
+                            <thead>
+                                <tr>
+                                    <th>이미지</th>
+                                    <th>상품정보</th>
+                                    <th>판매가</th>
+                                    <th>선택</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cart_01">
+                                    <td><div class="td_fraim"><img src="/img/detail/detail_main_01.jpg" alt=""></div></td>
+                                    <td><a href="/sub/shop/detail_01.html">대대포블루[8병/12병]</a></td>
+                                    <td>25,200원</td>
+                                    <td class="mv_btn_3">
+                                        <a href="#none">주문하기</a>
+                                        <a href="#none" class="remove_cart_1">삭제하기</a>
+                                    </td>
+                                </tr>
+                                <tr class="cart_02">
+                                    <td><div class="td_fraim"><img src="/img/sooljan/jan_01.jpg" alt=""></div></td>
+                                    <td><a href="/sub/shop/detail_01.html">달잔</a></td>
+                                    <td>24,800원</td>
+                                    <td class="mv_btn_3">
+                                        <a href="#none">주문하기</a>
+                                        <a href="#none" class="remove_cart_2">삭제하기</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<?php include_once("../../layout/footer.html"); ?>

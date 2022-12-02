@@ -1,0 +1,48 @@
+<?php include_once("../layout/header.html"); ?>
+    <form id="login">
+        <fieldset>
+            <legend>로그인</legend>
+            <ul id="login_tab">
+                <li>
+                    <input type="radio" name="tab_01" id="login_01" checked>
+                    <label for="login_01">회원로그인</label>
+                    <div class="ab_box ab_01"> 
+                        <ul class="login_box">
+                            <li><input type="text" placeholder="아이디를 입력하세요" required autofocus></li>
+                            <li><input type="password" placeholder="비밀번호를 입력하세요" required ></li>
+                        </ul>
+                        <input type="submit" value="로그인">
+                        <input type="checkbox" id="save_id">
+                        <label for="save_id">아이디저장</label>
+                        <ul class="search_idpw">
+                            <li><a href="#">아이디찾기</a></li>
+                            <li><a href="#">비밀번호찾기</a></li>
+                        </ul>
+                        <div class="move_join">
+                            <a href="/sub/join_01.html">회원가입</a>
+                        </div>
+                        <ul class="easy_login">
+                            <li><a href="#">네이버 계정으로 로그인</a></li>
+                            <li><a href="#">카카오 계정으로 로그인</a></li>
+                            <li><a href="#">구글 계정으로 로그인</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="tab_01" id="login_02">
+                    <label for="login_02">비회원주문조회</label>
+                    <div class="ab_box ab_02">
+                        <ul class="login_box_2">
+                            <li><input type="text" placeholder="주문자명을 입력하세요" required ></li>
+                            <li><input type="text" placeholder="주문번호를 입력하세요" required></li>
+                        </ul>
+                        <input type="submit" value="비회원 주문조회">
+                        <div class="move_join">
+                            <a href="/sub/join_01.html">회원가입</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+<?php include_once("../layout/footer.html"); ?>

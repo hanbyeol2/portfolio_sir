@@ -1,0 +1,116 @@
+<?php include_once("../layout/header.html"); ?>
+    <section id="join_nav">
+        <div class="container_mi">
+            <h2>회원가입</h2>
+            <ul>
+                <li>
+                    <p class="round_num">01</p>
+                    <p>약관동의</p>
+                </li>
+                <li>
+                    <p class="round_num state_num">02</p>
+                    <p>정보입력</p>
+                </li>
+                <li>
+                    <p class="round_num">03</p>
+                    <p>가입완료</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <form id="join">
+        <fieldset>
+            <p>
+                <span class="form_title info">기본정보</span>
+                <span>*필수입력사항</span>
+            </p>
+            <div class="line"></div>
+            <p>
+                <span class="form_title">아이디* </span>
+                <input type="text" placeholder=" 영문,숫자를 조합해주세요" name="id" required autofocus>
+            </p>
+            <p>
+                <span class="form_title">비밀번호* </span>
+                <input type="password" placeholder=" 영문,숫자,특수문자를 조합해주세요" name="pw" required>
+            </p>
+            <p>
+                <span class="form_title">비밀번호 확인* </span>
+                <input type="password" placeholder=" 비밀번호를 한번 더 입력해 주세요" name="pw" required>
+            </p>
+            <p>
+                <span class="form_title">이름* </span>
+                <input type="text" placeholder=" 한글로입력해주세요" name="name" required>
+            </p>
+            <p>
+                <span class="form_title">전화번호* </span>
+                <input type="text" placeholder=" -없이 입력하세요" name="phone" required>
+                <p class="agree">
+                    <input type="checkbox" id="phone" value="phone">
+                    <label for="phone">정보/이벤트 SMS 수신에 동의합니다(선택)</label>
+                </p>
+            </p>
+            <p>
+                <span class="form_title">이메일* </span>
+                <input type="text" placeholder=" homechelin@gmail.com" name="mail" required>
+                <p class="agree">
+                    <input type="checkbox" id="e-mail" value="e-mail">
+                    <label for="e-mail">정보/이벤트 메일 수신에 동의합니다(선택)</label>
+                </p>
+            </p>
+            <p>
+                <span class="form_title info">부가정보</span>
+            </p>
+            <div class="line"></div>
+            <p>
+                <span class="form_title">성별 </span>
+                <input type="radio" name="gender" id="nocomment" checked>
+                <label for="nocomment">응답안함</label>
+                <input type="radio" name="gender" id="man" >
+                <label for="man">남자</label>
+                <input type="radio" name="gender" id="woman">
+                <label for="woman">여자</label>
+
+            </p>
+
+            <p>
+                <span class="form_title">선호하는 주류 </span>
+                <input type="checkbox" id="check_01" value="checkbox_01" >
+                <label for="check_01">탁주</label>
+                <input type="checkbox" id="check_02" value="checkbox_01">
+                <label for="check_02">과실주</label>
+                <input type="checkbox" id="check_03" value="checkbox_01">
+                <label for="check_03">증류주</label>
+                <input type="checkbox" id="check_04" value="checkbox_01">
+                <label for="check_04">약주/청주</label>
+            </p>
+            <p>
+                <span class="form_title">생년월일 </span>
+                <input type="date" name="date" min="1921-01-01" max="2021-12-31">
+            </p>
+            <p>
+                <span class="form_title">유입경로 </span>
+                <select name="way">
+                    <option value="choice">(선택)</option>
+                    <optgroup label="SNS">
+                        <option value="instagram">인스타그램</option>
+                        <option value="facebook">페이스북</option>
+                        <option value="twitter">트위터</option>
+                    </optgroup>
+                    <optgroup label="검색엔진">
+                        <option value="naver">네이버</option>
+                        <option value="google">구글</option>
+                        <option value="daum">다음</option>
+                    </optgroup>
+                    <optgroup label="그외">
+                        <option value="youtube">유튜브</option>
+                        <option value="recommend">지인추천</option>
+                        <option value="ect">기타</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="회원가입">
+            </p>
+        </fieldset>
+    </form>
+<?php include_once("../layout/footer.html"); ?>
